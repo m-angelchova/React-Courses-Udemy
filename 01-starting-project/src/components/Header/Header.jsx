@@ -2,7 +2,6 @@ import reactImg from "../../assets/react-core-concepts.png";
 import './Header.css';  //would apply the CSS to other <header> elements outside of this component
 
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
-//
 
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
