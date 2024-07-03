@@ -8,6 +8,7 @@ import HomePage from "./pages/Home";
 import ProductsPage from "./pages/Products";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+import ProductDetailPage from "./pages/ProductDetail";
 
 // const routeDefinitions = createRoutesFromElements(
 //   <Route>
@@ -24,8 +25,9 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
+      { path: "/", element: <HomePage /> }, // "/" absolute path, added directly to the domain name , "" relative path -> will append to the parent path
       { path: "/products", element: <ProductsPage /> },
+      { path: "/products/:productId", element: <ProductDetailPage /> },
     ],
   },
 ]);
