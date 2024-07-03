@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> }, // "/" absolute path, added directly to the domain name , "" relative path -> will append to the parent path
+      { index: true, element: <HomePage /> }, // "/" absolute path, added directly to the domain name , "" relative path -> will append to the parent path
       { path: "/products", element: <ProductsPage /> },
       { path: "/products/:productId", element: <ProductDetailPage /> },
     ],
